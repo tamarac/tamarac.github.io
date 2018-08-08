@@ -1,0 +1,38 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+    background-color: #111;
+    color: #f1f1f1;
+}
+h2 {
+    color: #0ea79a;
+    font-weight: 700;
+    font-size: 5em;
+    margin:20px;
+}
+.text-center {
+    text-align: center;
+    padding: 20vh;
+}
+p {
+    font-size: 3em;
+    line-height: 1.2em;
+    margin: 0;
+}
+.social {
+    margin-top: 40px;
+}
+.social ul {
+    list-style-type: none;
+}
+.social ul li {
+    display: inline;
+    padding: 10px;
+}
+.social a {
+    color: #0ea79a;
+}
+i {
+    font-size: 52px;
+}
