@@ -8,7 +8,7 @@ body {
 h2 {
     color: #0ea79a;
     font-weight: 700;
-    font-size: 5em;
+    font-size: 30px;
     margin:20px;
 }
 .text-center {
@@ -16,7 +16,7 @@ h2 {
     padding: 20vh;
 }
 p {
-    font-size: 3em;
+    font-size: 18px;
     line-height: 1.2em;
     margin: 0;
 }
@@ -34,5 +34,5 @@ p {
     color: #0ea79a;
 }
 i {
-    font-size: 52px;
+    font-size: 32px;
 }
