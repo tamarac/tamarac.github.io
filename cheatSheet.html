@@ -17,45 +17,43 @@
      <h3> Cheat Sheet more Used</h3>
    </div>
    <div class="row">
-      <div class="col-sm-1 ol-md-4 col-lg-4 col-xl-4 border-right">
-    <h4 style="padding: 0 0 10 0">GIT</h4>
-    <p><code>git clone url </code> - clonar a branch para o pc</p>
-    <p><code>git checkout 'name_branch' </code> - entrar numa branch já existente.</p>
+      <div class="col-sm-1 ol-md-4 col-lg-4 col-xl-4 border-right cheatSheet">
+        <h4 style="padding: 0 0 10 0">GIT</h4>
+        <p><code>git clone url </code> - clonar a branch para o pc</p>
+        <p><code>git checkout 'name_branch' </code> - entrar numa branch já existente.</p>
+        <p><code>git checkout -b 'name_branch' </code>- criar e entrar na branch.</p>
+        <p><code>git fetch </code> - sincroniza branchs remotas criadas.</p>
+        <p><code>git branch </code>- listagem das branchs do projeto no pc.</p>
+        <p><code>git pull origin  'name_branch'</code> - puxa os dados da branch</p>
+        <p><code>git push origin 'name_branch'</code> - envia os dados para a branch remota.</p>
+        <p><code>git add .</code> - add todos os arquivos com alteração.</p>
+        <p><code>git add 'name_file' </code> - add arquivos especificos</p>
+        <p><code>git log</code> - para ver historico de commits.</p>
+        <p><code>git reset</code>  - funciona tanto para o commit quanto para o add</p>
+        <p><code>git reset --hard HEAD~n </code>- 'n' diz quantos commits ele irá voltar.</p>
+        <p><code>git push origin 'name_branch' --force </code> - será necessária a flah force para o comando do resert hard</p>
+        <p><code>git stash </code> - salvar um commit “para depois”. ex: precisa trocar de branch para resolver algo urgente, porém não terminou oq estava fazendo.</p>
+        <p><code>git stash apply </code> - para retornar o stash como arquivo para ser commitado</p>
+        <p><code>git rm --cache git ls-files -i -X .gitignore </code> - esse comando irá excluir arquivos que foram comitados errado e após o erro foram adicionados no .gitignore. ex: criou a branch e esqueceu de colocar a vendor do projeto no gitignore e acabou comitando tudo. Add ele no gitignore de push e rode o comando.</p>
 
-<p><code>git checkout -b 'name_branch' </code>- criar e entrar na branch.</p>
-<p><code>git fetch </code> - sincroniza branchs remotas criadas.</p>
-<p><code>git branch </code>- listagem das branchs do projeto no pc.</p>
-<p><code>git pull origin  'name_branch'</code> - puxa os dados da branch</p>
-<p><code>git push origin 'name_branch'</code> - envia os dados para a branch remota.</p>
-<p><code>git add .</code> - add todos os arquivos com alteração.</p>
-<p><code>git add 'name_file' </code> - add arquivos especificos</p>
-<p><code>git log</code> - para ver historico de commits.</p>
-<p><code>git reset</code>  - funciona tanto para o commit quanto para o add</p>
-<p><code>git reset --hard HEAD~n </code>- 'n' diz quantos commits ele irá voltar.</p>
-<p><code>git push origin 'name_branch' --force </code> - será necessária a flah force para o comando do resert hard</p>
-<p><code>git stash </code> - salvar um commit “para depois”. ex: precisa trocar de branch para resolver algo urgente, porém não terminou oq estava fazendo.</p>
-
-<p><code>git stash apply </code> - para retornar o stash como arquivo para ser commitado</p>
-<p><code>git rm --cache git ls-files -i -X .gitignore </code> - esse comando irá excluir arquivos que foram comitados errado e após o erro foram adicionados no .gitignore. ex: criou a branch e esqueceu de colocar a vendor do projeto no gitignore e acabou comitando tudo. Add ele no gitignore de push e rode o comando.</p>
-
-  </div>
- <div class="col-sm-1 ol-md-4 col-lg-4 col-xl-4 border-right">
+ </div>
+ <div class="col-sm-1 ol-md-4 col-lg-4 col-xl-4 border-right cheatSheet">
     <h4 style="padding: 0 0 10 0"> Docker</h4>
-<p><code>docker-compose  up -d </code>- executa os containers em segundo plano.</p>
-<p><code>docker-compose down</code> - derruba os containers.</p>
-<p><code>docker-compose restart</code> - para e retornar os containers.</p>
-<p><code>docker-compose ps </code>- caso esteja na pasta do projeto, esse comando irá listar apenas os containers do docker-compose.yml atual.</p>
-<p><code>docker-compose exec -T 'name_container' mysqldump -h name_container -u root -proot name_databese name_table > name_file.sql </code>- gera um dump de tabela especifica.</p>
+    <p><code>docker-compose  up -d </code>- executa os containers em segundo plano.</p>
+    <p><code>docker-compose down</code> - derruba os containers.</p>
+    <p><code>docker-compose restart</code> - para e retornar os containers.</p>
+    <p><code>docker-compose ps </code>- caso esteja na pasta do projeto, esse comando irá listar apenas os containers do docker-compose.yml atual.</p>
+    <p><code>docker-compose exec -T 'name_container' mysqldump -h name_container -u root -proot name_databese name_table > name_file.sql </code>- gera um dump de tabela especifica.</p>
 
-<p><code>docker network ls </code> - lista as redes</p>
-<p><code>docker network rm 'name_network' </code>- remove rede</p>
-<p><code>docker container ls/ps </code>- lista todos os container da maquina</p>
-<p><code>docker container stop 'name_container' </code> - para o container </p>
-<p><code>docker container rm 'name_container' </code> - remove o container (lembrando que para remover o container deve estar parado).
-os comando ls e rm funcionam no geral igual para todos os contextos : volumes, images, container, networks e etc.</p>
+    <p><code>docker network ls </code> - lista as redes</p>
+    <p><code>docker network rm 'name_network' </code>- remove rede</p>
+    <p><code>docker container ls/ps </code>- lista todos os container da maquina</p>
+    <p><code>docker container stop 'name_container' </code> - para o container </p>
+    <p><code>docker container rm 'name_container' </code> - remove o container (lembrando que para remover o container deve estar parado).
+    os comando ls e rm funcionam no geral igual para todos os contextos : volumes, images, container, networks e etc.</p>
 
   </div>
-  <div class="col-sm-1 ol-md-4 col-lg-4 col-xl-4">
+  <div class="col-sm-1 ol-md-4 col-lg-4 col-xl-4 cheatSheet">
       <h4 style="padding: 0 0 10 0"> kubernets</h4>
       <p><code>kubectl  get pods -n 'service_name/alias'</code> - para listar os logs e o que está executando e parado</p>
       <p><code>kubectl logs 'pod_name' -n 'service/alias_service' </code>- para ver um log específico e mais recente</p>
