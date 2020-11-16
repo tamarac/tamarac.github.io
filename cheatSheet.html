@@ -19,6 +19,8 @@
    <div class="row">
       <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 border-right cheatSheet">
         <h4 style="padding: 0 0 10 0">GIT</h4>
+        <p><code>git config --get user.name</code> - mostra o nome do usuário que o repositorio está, o mesmo serve para o `user.email`</p>
+        <p><code>git config user.name "Name"</code> - para mudar o nome do user no git, pode usar `user.email` também, usar `--global` para quando a alteração for para todos os repos.</p>
         <p><code>git clone url </code> - clonar a branch para o pc</p>
         <p><code>git checkout 'name_branch' </code> - entrar numa branch já existente.</p>
         <p><code>git checkout -b 'name_branch' </code>- criar e entrar na branch.</p>
@@ -55,8 +57,10 @@
   </div>
   <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 cheatSheet">
       <h4 style="padding: 0 0 10 0"> kubernets</h4>
-      <p><code>kubectl  get pods -n 'service_name/alias'</code> - para listar os logs e o que está executando e parado</p>
-      <p><code>kubectl logs 'pod_name' -n 'service/alias_service' </code>- para ver um log específico e mais recente</p>
+      <p><code>kubectl get services </code> - lista os serviços</p>
+      <p><code>kubectl get pods</code> - lista todos os pods executando `-n` para exibir os parados também</p>
+      <p><code>kubectl get pods -n 'service_name/alias'</code> - lista os logs e o que está executando e parado</p>
+      <p><code>kubectl logs 'pod_name' -n 'service/alias_service' </code>-  mostra um log específico e mais recente</p>
       <p><code>kubectl logs 'pod_name' -n 'service/alias_service' --previous </code> - só se precisar ver os logs antigos
       restartar um comando</p>
       <p><code>kubectl delete pods 'pod_name' -n 'service/alias_service' </code> - para reiniciar pods</p>
